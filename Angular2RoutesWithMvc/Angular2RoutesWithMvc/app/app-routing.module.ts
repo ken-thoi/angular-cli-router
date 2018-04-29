@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
@@ -15,5 +17,6 @@ const routes: Routes = [
         RouterModule
     ]
 })
+
 export class AppRoutingModule {
 }
